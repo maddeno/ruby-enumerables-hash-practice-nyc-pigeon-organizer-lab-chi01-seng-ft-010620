@@ -7,11 +7,13 @@ def nyc_pigeon_organizer(data)
       gender: [],
       lives: []
     }
-    data[:color].each do |color|
-      
-      
+    data[:color].each do |color_name, values|
+      if values.include?(name)
+        pigeon_data[:color].push(color_name)
+      end
     end
     pigeon_list[name] = pigeon_data
   end
+  puts "endlist #{pigeon_list}"
   pigeon_list
 end
