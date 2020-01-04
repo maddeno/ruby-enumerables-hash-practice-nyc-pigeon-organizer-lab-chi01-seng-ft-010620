@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     end
     data[:lives].each do |lives_name, values|
       if values.include?(name)
-        pigeon_data[:live].push(lives_name)
+        pigeon_data[:lives].push(lives_name)
       end
     end
     pigeon_list[name] = pigeon_data
