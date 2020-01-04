@@ -24,6 +24,5 @@ def nyc_pigeon_organizer(data)
     end
     pigeon_list[name] = pigeon_data
   end
-  puts "endlist #{pigeon_list}"
   pigeon_list
 end
