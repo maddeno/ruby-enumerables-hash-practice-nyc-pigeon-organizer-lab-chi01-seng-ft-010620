@@ -9,17 +9,17 @@ def nyc_pigeon_organizer(data)
     }
     data[:color].each do |color_name, values|
       if values.include?(name)
-        pigeon_data[:color].push(color_name)
+        pigeon_data[:color].push(color_name.to_s)
       end
     end
     data[:gender].each do |gender_name, values|
       if values.include?(name)
-        pigeon_data[:gender].push(gender_name)
+        pigeon_data[:gender].push(gender_name.to_s)
       end
     end
     data[:lives].each do |lives_name, values|
       if values.include?(name)
-        pigeon_data[:lives].push(lives_name)
+        pigeon_data[:lives].push(lives_name.to_s)
       end
     end
     pigeon_list[name] = pigeon_data
